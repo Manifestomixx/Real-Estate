@@ -1,0 +1,183 @@
+/* Base styles */
+.bg-properties {
+  min-height: 100vh;
+  padding-top: 40px;
+ 
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+section h3 {
+  font-size: 20px;
+}
+
+.houseImg {
+  border-radius: 10px 10px 0 0;
+  width: 500px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.location {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(102, 102, 102, 1);
+}
+
+.location-icon {
+  width: 15px;
+  height: 15px;
+  color: rgba(102, 102, 102, 1);
+}
+
+.bedroom,
+.bathroom {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(102, 102, 102, 1);
+}
+
+.icons {
+  width: 17px;
+  height: 17px;
+  color: rgba(102, 102, 102, 1);
+}
+
+.feature {
+  background-color: rgba(61, 153, 112, 1);
+  border-radius: 3px;
+}
+
+.sale {
+  background-color: rgba(211, 211, 211, 0.7);
+  border-radius: 3px;
+}
+
+.view {
+  margin-left: 15.6%;
+  margin-top: 17%;
+}
+
+.view-box {
+  background-color: rgba(135, 135, 135, 0.7);
+  border-radius: 10px;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: rgba(61, 153, 112, 1);
+  border-color: rgba(61, 153, 112, 1);
+}
+
+.pagination .page-item .page-link {
+  background-color: white;
+  border: none;
+}
+
+.advertImg {
+  aspect-ratio: 1/4;
+  height: 300px;
+  width: 225px;
+  object-fit: cover;
+}
+
+.advertTitle {
+  font-size: 18px;
+}
+
+.advert-bg {
+  background-color: rgba(74, 74, 76, 0.349);
+  backdrop-filter: blur(1px);
+}
+
+.advert-bg h6 {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+}
+
+.advert-head {
+  font-size: 50px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(61, 153, 112, 1);
+  border-radius: 50px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .houseImg {
+    width: 100%;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .advert-head {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .houseImg {
+    width: 100%;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .advert-head {
+    font-size: 30px;
+  }
+  .view {
+    margin-left: 10%;
+    margin-top: 15%;
+  }
+}
+
+@media (max-width: 600px) {
+    .houseImg {
+      width: 100%;
+    }
+    .title {
+      font-size: 14px;
+    }
+    .filter{
+        font-size: 14px;
+    }
+    .icon{
+        width: 14px;
+        height: 14px;
+        /* padding-bottom: 10px; */
+      }
+      .view {
+          margin-left: 5%;
+          margin-top: 10%;
+      }
+      .bg-properties {
+          flex-direction: column;
+          padding-top: 20px;
+      }
+      
+      .advert-head {
+        font-size: 24px;
+      }
+      
+      .advertImg {
+          aspect-ratio: 1/4;
+          height: 300px;
+          width: 205px;
+          object-fit: cover;
+        }
+        
+
+      }
+      
+      .new-box{
+        border: 3px solid red;
+      }
+

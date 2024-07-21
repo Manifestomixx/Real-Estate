@@ -1,0 +1,188 @@
+.lineL {
+    display: inline-block;
+    width: 35%;
+    border-top: 1px solid transparent;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .lineL::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.542), transparent);
+    z-index: -1;
+  }
+.lineR {
+    display: inline-block;
+    width: 35%;
+    border-top: 1px solid transparent;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .lineR::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.542), transparent);
+    z-index: -1;
+  }
+  .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+  .error-text{
+    font-size: 10px;
+}
+@media (min-width:1200px){
+    
+    Form.Label{
+        font-weight: 500;
+    }
+
+    .form{
+    
+        padding-top: 50px;
+
+        
+    }
+
+    Form{
+        padding:0px 70px;
+    }
+    
+    .form h1{
+        padding:0px 70px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .form .sm-text{
+        font-size: 16px;
+        color:rgba(24, 26, 32, 0.82);
+        padding:0px 70px;
+    }
+    .form .sm-text{
+        font-size: 16px;
+        color:rgba(24, 26, 32, 0.82);
+        padding:0px 70px;
+    }
+    .form button{
+        font-size: 16px;
+        color:rgba(24, 26, 32, 0.82);
+        font-weight: 400;
+    }
+    .form .Btn{
+        background-color:rgba(61, 153, 112, 1) ;
+        border: none;   
+    }
+    .form .Btn:hover{
+        background-color:rgba(61, 153, 112, 1) ;  
+    }
+    .form .text{
+        color:rgba(61, 153, 112, 1) ;
+        border: none;
+        
+    }
+    
+    .logo{
+        background: rgba(61, 153, 112, 1);
+        border-radius: 50px;
+        padding: 3px 5px;
+        color: rgba(254, 254, 255, 1);
+        font-weight: 600;
+        font-size:28px;
+        
+    }
+    .crown{
+        color: gold;
+        right: 0%;
+        
+    } 
+    .check-text{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 899px) {
+    section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .lineL, .lineR {
+        width: 25%;
+    }
+
+    Form {
+        padding: 10px;
+    }
+
+    .top {
+        padding: 0px 10px;
+    }
+
+    .form h1 {
+        font-size: 20px;
+        padding: 0px 10px;
+    }
+
+    .form p {
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+
+    .form button {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+    .logoName {
+        font-size: 24px;
+    }
+    .SignImg {
+        margin-bottom: 30px;
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 21/9;
+        border-radius: 5px;
+    }
+}
+
+input[type="checkbox"]:checked{
+    background-color: rgb(61, 153, 112);
+}
+
+
+
+.check{
+    font-size: 10px;
+}
+
+.bg{
+        /* overflow: hidden; */
+        min-height: 100vh;
+    }

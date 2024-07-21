@@ -1,0 +1,156 @@
+.navSection {
+  min-height: 10vh;
+  background-color: rgba(35, 39, 46, 0.67);
+  position: fixed;
+  z-index: 1000;
+}
+
+.crown {
+  color: gold;
+  right: 0%;
+}
+
+.logo {
+  background: rgba(61, 153, 112, 1);
+  border-radius: 50px;
+  padding: 3px 5px;
+  color: rgba(254, 254, 255, 1);
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.nav-text {
+  color: white;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-text::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.8s ease;
+}
+
+.nav-text.active::after {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .nav-text {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .nav-text::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: width 0.8s ease;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 100;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-text.active::after {
+    width: 100%;
+  }
+}
+
+@media (max-width: 899px) {
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    gap: 0;
+    flex-direction: column;
+    background-color: #ffffffdf;
+    background: blur(0px);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 20px;
+    top: 8%;
+  }
+
+  .nav-text {
+    color: black;
+  }
+
+  .nav-text.active::after {
+    width: 10%;
+    background-color: black;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .logo{
+    font-size: 15px;
+    width: px;
+    height: px;
+  }
+  .logoName{
+    font-size: 15px;
+  }
+  .profile-text{
+    font-size: 12px;
+    padding-top: 5px;
+  }
+  .profile-img{
+    width: 25px;
+
+  }
+  .box-move{
+    padding-left: 20rem;
+  }
+}
+
+@media (max-width: 600px){
+  .box-move{
+    padding-left: 3rem;
+  }
+  .logoName{
+    font-size: 10px;
+  }
+  .profile-text{
+    font-size: 10px;
+    padding-top: 5px;
+  }
+}

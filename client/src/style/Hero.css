@@ -1,0 +1,160 @@
+/* Hero.css */
+
+/* Base styles */
+.bgImg {
+    background-image: url("../assets/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  
+  .box {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .head1 {
+    font-size: 68px;
+    font-weight: 700;
+  }
+  
+  .head2 {
+    font-size: 26px;
+    width: 700px;
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  .md-text {
+    font-size: 16px;
+  }
+  
+  .sm-text {
+    color: rgba(120, 120, 120, 1);
+  }
+  
+  input {
+    border: none;
+    transition: border-color 0.3s ease-in-out; 
+    outline: none;
+    width: 80%;
+  }
+  
+  .green {
+    background-color: rgba(61, 153, 112, 1);
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+  .green-text {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .box-line {
+    border-left: 1px solid;
+    width: 5px;
+  }
+  
+  .bed-btn {
+    border-radius: 50px;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4px;
+    font-weight: 600;
+  }
+  
+  .outer-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 1238px;
+    height: 135px;
+    margin-top: 50px;
+  }
+  
+  .inner-box {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1200px) {
+    .head1 {
+      font-size: 48px;
+    }
+  
+    .head2 {
+      font-size: 22px;
+      width: 600px;
+    }
+  
+    .outer-box {
+      width: 100%;
+      height: auto;
+      margin-top: 30px;
+    }
+
+    
+  
+    
+  }
+  
+  @media (max-width: 900px) {
+    .head1 {
+      font-size: 36px;
+    }
+  
+    .head2 {
+      font-size: 18px;
+      width: 100%;
+    }
+  
+    .outer-box {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  
+    .ps-5 {
+      padding-left: 0;
+    }
+  
+    .green-text {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .head1 {
+      font-size: 28px;
+    }
+  
+    .head2 {
+      font-size: 16px;
+      width: 100%;
+    }
+  
+    .outer-box {
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+  
+    .green-text {
+      font-size: 16px;
+    }
+  
+    .box-line {
+      border-left: none;
+      border-top: 1px solid;
+      width: 100%;
+    }
+  }
+  
