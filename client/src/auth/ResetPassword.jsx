@@ -118,7 +118,7 @@ const ResetPassword = () => {
             />
             <div className="position-absolute top-0 translate-middle- d-flex align-items-center mt-5 ms-5  gap-1">
               <div className="logo">BH</div>
-              <h1 className="logoName mt-3">BetaHouse</h1>
+              <h1 className="logoName mt-2">BetaHouse</h1>
             </div>
           </div>
         </section>
