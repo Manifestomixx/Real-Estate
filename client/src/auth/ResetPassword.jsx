@@ -49,7 +49,7 @@ const ResetPassword = () => {
         try {
           setSuccessMsg("");
           setServerError("")
-          const req = await fetch(`http://localhost:5114/api/v1/auth/resetpassword/${resetToken}`,{
+          const req = await fetch(`https://real-estate-j4gr.onrender.com/api/v1/auth/resetpassword/${resetToken}`,{
             method:"PUT",
             headers:{
               "Content-Type":"application/json"

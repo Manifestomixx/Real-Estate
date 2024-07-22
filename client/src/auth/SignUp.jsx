@@ -44,7 +44,7 @@ const SignUp = () => {
     setIsClicked(true)
 
     try {
-      const response = await fetch("http://localhost:5114/api/v1/auth/register", {
+      const response = await fetch("https://real-estate-j4gr.onrender.com/api/v1/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

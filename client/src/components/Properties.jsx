@@ -14,7 +14,7 @@ import imageIcon from "../assets/image.png";
 import { IoLocationSharp } from "react-icons/io5";
 import Pagination from "./Pagination";
 import PropertyCarousel from "./PropertyCarousel";
-import "../style/Properties.css"
+// import "../style/Properties.css"
 
 const Properties = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -33,9 +33,9 @@ const Properties = () => {
   return (
     <>
     <main>
-        <div className="container">
+        <div className="container pt-5">
         <section className="d-flex justify-content-between mt-5 nex-box">
-            <div className="d-flex  align-items-center gap-3 border">
+            <div className="d-flex  align-items-center gap-3 ">
               <div className="d-flex gap-2 align-items-center">
                 <img src={filterIcon} alt="filter-icon" className="img-fluid icon m" />
                 <h3 className="filter">More Filter</h3>
@@ -44,7 +44,7 @@ const Properties = () => {
                 <h3 className="filter">{currentItems.length} of {data.length} results</h3>
               </div>
             </div>
-            <div className="d-flex  align-items-center gap-2">
+            <div className="d-flex  align-items-center gap-2 mt-5">
               <h3 className="filter">Sort by:</h3>
               <div className="d-flex align-items-center gap-2">
                 <h3 className="filter">Default</h3>

@@ -137,6 +137,10 @@ section h3 {
     margin-left: 10%;
     margin-top: 15%;
   }
+  .new-box{
+    margin: auto;
+    padding-top: 30px;
+  }
 }
 
 @media (max-width: 600px) {

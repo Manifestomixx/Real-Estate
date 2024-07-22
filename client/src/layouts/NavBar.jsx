@@ -38,7 +38,7 @@ const NavBar = () => {
     }
 
     try {
-      const request = await fetch(`http://localhost:5114/api/v1/users/profile`, {
+      const request = await fetch(`https://real-estate-j4gr.onrender.com/api/v1/users/profile`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -145,7 +145,7 @@ const NavBar = () => {
               </div>
             </div>
             <div className="d-flex gap-1 align-items-center d-lg-none box-move">
-            <img src={userImage} alt="User" className="profile-img" />
+            {/* <img src={userImage} alt="User" className="profile-img" /> */}
             <h5 className="text-white profile-text">{`${Profile?.firstName} ${Profile?.lastName}`|| "Unknown User"}</h5>
             </div>
             <div className={`hamburger ${isActive ? "active" : ""}`} onClick={toggleHamburger}>

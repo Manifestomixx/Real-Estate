@@ -1,7 +1,7 @@
 require("dotenv/config")
 const express = require("express");
 const app = express();
-const PORT = 5114;
+const PORT = process.env.PORT || 5114;
 const cors = require("cors");
 const connect = require('./config/DB');
 const authRoute = require('./routes/authRoute');

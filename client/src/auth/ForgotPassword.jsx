@@ -29,7 +29,7 @@ const ForgotPassword = () => {
       });
       const handleForgotPassword = async(data)=>{
         try {
-          const request = await fetch("http://localhost:5114/api/v1/auth/forgotpassword",{
+          const request = await fetch("https://real-estate-j4gr.onrender.com/api/v1/auth/forgotpassword",{
             method:"POST",
             headers:{
               "Content-Type":"application/json"
