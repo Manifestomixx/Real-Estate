@@ -4,8 +4,6 @@ import Form from "react-bootstrap/Form";
 import Image from "../assets/auth.png";
 import { Link, useNavigate } from "react-router-dom";
 import "../style/SignUp.css";
-import { FcGoogle } from "react-icons/fc";
-import { FaCrown } from "react-icons/fa6";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { resetPasswordSchema } from "../utility/ValidationSchema";
 import { yupResolver } from "@hookform/resolvers/yup";

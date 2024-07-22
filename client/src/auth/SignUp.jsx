@@ -5,7 +5,6 @@ import Image from "../assets/auth.png";
 import { Link, useNavigate } from "react-router-dom";
 import "../style/SignUp.css";
 import { FcGoogle } from "react-icons/fc";
-import { FaCrown } from "react-icons/fa6";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -53,17 +52,17 @@ const SignUp = () => {
       });
 
       const result = await response.json();
-      console.log("API response:", result); // Log the response from the API
+      console.log("API response:", result); 
 
       if (!result.success) {
         toast.error(result.message || "Registration failed. Please try again.");
-        console.error("Server error:", result.message); // Log server errors
+        console.error("Server error:", result.message); 
       } else {
         toast.success(result.message || "Registration successful!");
         navigate('/');
       }
     } catch (error) {
-      console.error("Network error:", error); // Log network errors
+      console.error("Network error:", error); 
       toast.error("An error occurred. Please try again.");
     } finally {
       setIsClicked(false);

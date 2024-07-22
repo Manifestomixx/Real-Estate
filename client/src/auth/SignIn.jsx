@@ -78,7 +78,7 @@ const SignIn = () => {
         <section className="row">
           <div className="col-lg-6 form">
             <div className="px-3 top">
-              <h1 className="top">Welcome Back to Kings Villa!</h1>
+              <h1 className="top">Welcome Back to BetaHouse!</h1>
               <p className="top sm-text">Let's get started by filling out the information below</p>
 
               <Form onSubmit={handleSubmit(handleSignIn)}>

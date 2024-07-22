@@ -4,9 +4,6 @@ import Form from "react-bootstrap/Form";
 import Image from "../assets/auth.png";
 import { Link, useNavigate } from "react-router-dom";
 import "../style/SignUp.css";
-import { FcGoogle } from "react-icons/fc";
-import { FaCrown } from "react-icons/fa6";
-import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { forgotPasswordSchema } from "../utility/ValidationSchema";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from 'react-hook-form';
@@ -14,8 +11,7 @@ import toast from "react-hot-toast";
 
 const ForgotPassword = () => {
     const [isClicked, setIsClicked] = useState(false);
-    const [isReveal, setIsReveal] = useState(false);
-    const [loading, setLoading] = useState(false);  // New state for loading
+    const [loading, setLoading] = useState(false);  
     const navigate = useNavigate();
     const {
         register,
@@ -94,12 +90,9 @@ const ForgotPassword = () => {
               alt="house-image"
               className="img-fluid rounded-start SignImg "
             />
-            <div className="position-absolute top-0 translate-middle- d-flex align-items-center mt-5 ms-5  gap-2">
-              <div className="logo position-relative">
-                <div className="logo">KV</div>
-                <FaCrown className="position-absolute top-0 me-3 translate-middle-y crown " />
-              </div>
-              <h1 className="logoName mt-3">KingsVilla</h1>
+            <div className="position-absolute top-0 translate-middle- d-flex align-items-center mt-5 ms-5  gap-1">
+                <div className="logo">BH</div>
+              <h1 className="logoName mt-3">BetaHouse</h1>
             </div>
           </div>
         </section>
