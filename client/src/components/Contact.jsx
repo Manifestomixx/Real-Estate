@@ -1,5 +1,5 @@
 import React from "react";
-import { IoLocationSharp } from "react-icons/io5";
+import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa6";
 import Button from "react-bootstrap/Button";
@@ -11,19 +11,19 @@ const Contact = () => {
       <main>
         <section className="container py-5">
           <div className="mx-lg-5 px-4 py-5">
-            <h1 className="pt-5">Our Contact Information</h1>
+            <h1 className="pt-5 ">Our Contact Information</h1>
             <p>
               Do you need a new house? Kindly reach out to us via any of our
               communication channels with the details below
             </p>
             <div>
-              <IoLocationSharp className="location-icon" />
-              <p>95 Tinubu Estate, Lekki, Lagos</p>
+              
+              <p> <FaLocationDot  className="text-success"/> 95 Tinubu Estate, Lekki, Lagos</p>
               <p>
-                <MdEmail /> Email: support@rentbetahouse.com
+                <MdEmail  className="text-success"/> Email: support@rentbetahouse.com
               </p>
               <p>
-                <FaPhoneVolume /> Call: (234) 675 893 5675
+                <FaPhoneVolume className="text-success" /> Call: (234) 675 893 5675
               </p>
             </div>
           </div>
