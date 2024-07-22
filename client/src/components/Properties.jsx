@@ -35,7 +35,7 @@ const Properties = () => {
     <main>
         <div className="container pt-5">
         <section className="d-flex justify-content-between mt-5 nex-box">
-            <div className="d-flex  align-items-center gap-3 ">
+            <div className="d-flex  align-items-center gap-3 mt-5">
               <div className="d-flex gap-2 align-items-center">
                 <img src={filterIcon} alt="filter-icon" className="img-fluid icon m" />
                 <h3 className="filter">More Filter</h3>
