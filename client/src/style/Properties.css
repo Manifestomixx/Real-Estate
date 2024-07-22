@@ -135,7 +135,7 @@ section h3 {
   }
   .view {
     margin-left: 10%;
-    margin-top: 15%;
+    margin-top: 28%;
   }
   .new-box{
     margin: auto;
@@ -160,7 +160,7 @@ section h3 {
       }
       .view {
           margin-left: 5%;
-          margin-top: 10%;
+          margin-top: 20%;
       }
       .bg-properties {
           flex-direction: column;
