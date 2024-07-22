@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
 import "../style/Footer.css"
 
 const Footer = () => {
@@ -18,13 +21,13 @@ const Footer = () => {
           </div>
           <div>
             <div>
-              <p className='footer-p'>95 Tinubu Estate, Lekki, Lagos</p>
+              <p className='footer-p'><FaLocationDot className='text-white'/> 95 Tinubu Estate, Lekki, Lagos</p>
             </div>
             <div>
-              <p className='footer-p'>+234 675 8935 675</p>
+              <p className='footer-p'><FaPhone className='text-white'/> +234 675 8935 675</p>
             </div>
             <div>
-              <p className='footer-p'>support@rentbetahouse.com</p>
+              <p className='footer-p'><MdEmail className='text-white'/> support@rentbetahouse.com</p>
             </div>
           </div>
         </div>
@@ -32,19 +35,19 @@ const Footer = () => {
           
           <div>
             <h3 className='footer-h3 mb-4'>Quick Links</h3>
-            <Link to="Hero">
+            <Link to="Hero" className='text-decoration-none'>
             <p className='footer-p'>Home</p>
             </Link>
-            <Link to="Properties">
+            <Link to="Properties" className='text-decoration-none'>
             <p className='footer-p'>Properties</p>
             </Link>
-            <Link to="About">
+            <Link to="About" className='text-decoration-none'>
             <p className='footer-p'>About</p>
             </Link>
-            <Link to="">
+            <Link to="" className='text-decoration-none'>
             <p className='footer-p'>Contact us</p>
             </Link>
-            <Link to="">
+            <Link to="" className='text-decoration-none'>
             <p className='footer-p'>Blog</p>
             </Link>
            

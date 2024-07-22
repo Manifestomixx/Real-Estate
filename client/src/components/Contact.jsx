@@ -9,21 +9,21 @@ const Contact = () => {
   return (
     <>
       <main>
-        <section>
-          <div>
-            <h1>Our Contact Information</h1>
+        <section className="container py-5">
+          <div className="mx-lg-5 px-4 py-5">
+            <h1 className="pt-5">Our Contact Information</h1>
             <p>
-              Need to talk to someone? Kindly reach out to us via any of our
+              Do you need a new house? Kindly reach out to us via any of our
               communication channels with the details below
             </p>
             <div>
               <IoLocationSharp className="location-icon" />
-              <p>20 Lorem ipsum dolor sit amet, Victoria Island, Lagos</p>
+              <p>95 Tinubu Estate, Lekki, Lagos</p>
               <p>
-                <MdEmail /> Email: Hello@gmail.com
+                <MdEmail /> Email: support@rentbetahouse.com
               </p>
               <p>
-                <FaPhoneVolume /> Call: (234) 900-000-0000
+                <FaPhoneVolume /> Call: (234) 675 893 5675
               </p>
             </div>
           </div>
