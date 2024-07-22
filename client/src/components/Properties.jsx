@@ -14,7 +14,7 @@ import imageIcon from "../assets/image.png";
 import { IoLocationSharp } from "react-icons/io5";
 import Pagination from "./Pagination";
 import PropertyCarousel from "./PropertyCarousel";
-// import "../style/Properties.css"
+import "../style/Properties.css"
 
 const Properties = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -69,15 +69,15 @@ const Properties = () => {
                 <div key={id} className="p-3 col-12  col-lg-4">
                    <div className="d-flex flex-column h-100">
                     <div className="position-relative w-100">
-                      <img src={image} alt="" className="img-fluid houseImg" />
+                      <img src={image} alt="image" className="img-fluid houseImg" />
                       <div className="position-absolute top-0 start-0 mt-3  px-3 d-flex justify-content-between w-100">
                         <p className="p-2 feature text-white">{feature}</p>
                         <p className="p-2 sale text-white">{offer}</p>
                       </div>
                       <div className="position-absolute d-flex top-50 ms-3 end-0 p-3 gap-3 view">
-                        <img src={linkIcon} alt="" className="view-box p-2" />
-                        <img src={cameraIcon} alt="" className="view-box p-2" />
-                        <img src={imageIcon} alt="" className="view-box p-2" />
+                        <img src={linkIcon} alt="link-icon" className="view-box p-2" />
+                        <img src={cameraIcon} alt="camera-icon" className="view-box p-2" />
+                        <img src={imageIcon} alt="image-icon" className="view-box p-2" />
                       </div>
                     </div>
                     <div className="p-3 border rounded-bottom flex-grow-1 d-flex flex-column justify-content-between">
@@ -91,11 +91,11 @@ const Properties = () => {
                       <div>
                         <div className="d-flex justify-content-between">
                           <div className="d-flex gap-2">
-                            <img src={bedIcon} alt="" className="icons" />
+                            <img src={bedIcon} alt="bed-icon" className="icons" />
                             <h6 className="bedroom">{bedroom}</h6>
                           </div>
                           <div className="d-flex gap-2">
-                            <img src={bathIcon} alt="" className="icons" />
+                            <img src={bathIcon} alt="bath-icon" className="icons" />
                             <h6 className="bathroom">{bathroom}</h6>
                           </div>
                         </div>
