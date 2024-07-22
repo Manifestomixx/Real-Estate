@@ -221,11 +221,8 @@ const SignUp = () => {
               alt="house-image"
               className="img-fluid rounded-start SignImg"
             />
-            <div className="position-absolute top-0 translate-middle- d-flex align-items-center mt-5 ms-5 gap-2">
-              <div className="logo position-relative">
+            <div className="position-absolute top-0 translate-middle- d-flex align-items-center mt-5 ms-5 gap-1">
                 <div className="logo">BH</div>
-                <FaCrown className="position-absolute top-0 me-3 translate-middle-y crown" />
-              </div>
               <h1 className="logoName mt-3">BetaHouse</h1>
             </div>
           </div>
