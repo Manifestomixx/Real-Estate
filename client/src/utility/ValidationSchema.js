@@ -35,11 +35,15 @@ export const forgotPasswordSchema = yup
 .required();
 
 // For reset password
-export const resetPasswordSchema = yup
-.object({
+export const resetPasswordSchema = yup.object({
+  password: yup
+    .string()
+    .required("Password is required")
+    .min(8, "Minimum length of password must be at least 8 characters"),
+  confirmPassword: yup
+    .string()
+    .required("Confirm password is required")
+    .min(8, "Minimum length of password must be at least 8 characters")
+    .oneOf([yup.ref('password')], "Passwords do not match"),
+});
 
-  password:yup.string().required("Password is required").min(8,"Minimum lenght of password must be at least 8 characters"),
-  confirmPassword:yup.string().required("Confirm password is required").min(8,"Minimum lenght of passwoord must be at least 8 characters")
-  .oneOf([yup.ref("password")],"Password do not match")
-})
-.required();
