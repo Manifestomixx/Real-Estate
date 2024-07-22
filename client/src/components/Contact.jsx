@@ -8,7 +8,7 @@ import Form from "react-bootstrap/Form";
 const Contact = () => {
   return (
     <>
-      <main>
+      <main className="pt-5">
         <section className="container py-5">
           <div className="mx-lg-5 px-4 py-5">
             <h1 className="pt-5 ">Our Contact Information</h1>
